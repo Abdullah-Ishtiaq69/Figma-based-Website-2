@@ -4,9 +4,9 @@
     --orange-color: hsl(12, 88%, 59%);
     --white-color: hsl(13, 100%, 96%);
     --cream-white-color: hsl(0deg 0% 98.04%);
-
     --dark-blue-color: hsl(228, 39%, 23%);
     --light-blue-color: hsla(228, 39%, 23%, 0.466);
+    --footer-section-color: hsl(240deg 11.76% 13.33%);
 
     --fw-regular: 400;
     --fw-semi-bold: 500;
@@ -60,6 +60,10 @@ ol {
 a {
     text-decoration: none;
     text-transform: capitalize;
+}
+
+input:focus {
+    outline: none;
 }
 
 /*       utility classes        */
@@ -205,6 +209,7 @@ p {
     background-color: var(--cream-white-color);
     position: relative;
     padding: 60px 20px 30px;
+    border-radius: var(--radius-light);
 }
 
 .testimonial-card .card-img {
@@ -212,4 +217,63 @@ p {
     top: -13%;
     left: 43%;
     width: 60px;
+}
+
+/* ---------------------------------------->                   Testimonial Section       <-------------------------------------------- */
+
+.second-last-section {
+    background-color: var(--orange-color);
+    padding: 40px 0;
+}
+
+.second-last-section-content .light {
+    width: 40%;
+}
+
+.second-last-section-content .btn {
+    background-color: var(--white-color);
+    color: var(--orange-color);
+    border: 1px solid var(--white-color);
+}
+
+/* ---------------------------------------->                   Footer                 <-------------------------------------------- */
+
+.footer-section { 
+    background-color: var(--footer-section-color);
+    padding: 60px 0;
+}
+
+.footer-section-content {
+    align-items: flex-start;
+}
+
+.footer-icon-section > svg {
+    margin-bottom: 80px;
+}
+
+.footer-icons > img {
+    cursor: pointer;
+}
+
+.footer-link-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.footer-link-section a {
+    color: var(--white-color);
+    font-size: var(--fs-400);
+}
+
+.footer-input-section input[type="search"] {
+    background-color: var(--white-color);
+    border: var(--white-color);
+    color: var(--orange-color);
+    margin: 0 10px 80px 0;
+}
+
+.copyright-txt {
+    font-size: var(--fs-300);
+    color: var(--cream-white-color);
 }
