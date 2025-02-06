@@ -27,6 +27,10 @@
     --line-height-h1: 65px;
     --line-height-h2: 40px;
     --line-height-p: 25px;
+
+    --radius-pill: 20px;
+    --radius-circle: 50%;
+    --radius-light: 6px;
 }
 
 /*      CSS Reset       */
@@ -93,7 +97,7 @@ button.btn {
     font-weight: var(--fw-bold);
     text-transform: capitalize;
     border: 1px solid var(--orange-color);
-    border-radius: 20px;
+    border-radius: var(--radius-pill);
     cursor: pointer;
 }
 
@@ -140,7 +144,7 @@ button.btn {
 /* ---------------------------------------->               Hero Section          <-------------------------------------------------------- */
 
 .hero-section {
-    margin: 40px auto;
+    margin: 40px auto 80px;
 }
 
 .hero-section .hero-section-left {
@@ -157,6 +161,35 @@ button.btn {
 
 /* ---------------------------------------->               Third Section            <-------------------------------------------------------- */
 
-.third-right-heading-section {
-    
+.third-section {
+    align-items: baseline;
 }
+
+.third-section-left {
+    width: 40%;
+}
+
+.third-section-right {
+    width: 45%;
+}
+
+.third-right-heading-section {
+    justify-content: flex-start;
+    column-gap: 30px;
+}
+
+.third-right-heading-numbering {
+    padding: 6px 20px;
+    color: var(--white-color);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-bold);
+    background-color: var(--orange-color);
+    border-radius: var(--radius-pill);
+}
+
+.third-right-sub-section p {
+    margin-left: 16.5%;
+}
+
+/* ---------------------------------------->            Testimonial Section       <-------------------------------------------------------- */
+
