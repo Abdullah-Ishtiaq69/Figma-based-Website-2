@@ -3,6 +3,7 @@
 :root {
     --orange-color: hsl(12, 88%, 59%);
     --white-color: hsl(13, 100%, 96%);
+    --cream-white-color: hsl(0deg 0% 98.04%);
 
     --dark-blue-color: hsl(228, 39%, 23%);
     --light-blue-color: hsla(228, 39%, 23%, 0.466);
@@ -63,11 +64,11 @@ a {
 
 /*       utility classes        */
 
-h1 {
+.h1 {
     font-size: var(--heading-1);
     font-weight: var(--fw-bold);
     color: var(--dark-blue-color);
-    line-height: var(--line-height-h1) ;
+    line-height: var(--line-height-h1);
 }
 
 h2.dark {
@@ -156,7 +157,7 @@ p {
     width: 50%;
 }
 
-.hero-section-left > p {
+.hero-section-left>p {
     width: 60%;
 }
 
@@ -188,5 +189,27 @@ p {
     padding: 6px 20px;
 }
 
-/* ---------------------------------------->            Testimonial Section       <-------------------------------------------------------- */
+/* ---------------------------------------->                   Testimonial Section       <-------------------------------------------- */
 
+.testimonial-section {
+    margin: 80px auto;
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    margin-bottom: 80px;
+}
+
+.testimonial-card {
+    width: 32%;
+    background-color: var(--cream-white-color);
+    position: relative;
+    padding: 60px 20px 30px;
+}
+
+.testimonial-card .card-img {
+    position: absolute;
+    top: -13%;
+    left: 43%;
+    width: 60px;
+}
